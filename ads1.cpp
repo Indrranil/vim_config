@@ -45,16 +45,17 @@ int Stack::isEmpty(){
     return 0;
 }
 
+// (treenode* temp) indicates that the temp is a pointer to an obj of type treemnode
 class tree{
     treenode* root;
     Stack* st;
     public:
         tree();
-        void create_nr();
-        void create_r();
-        void create_r(treenode* temp);
-        void inorder_r();
-        void inorder_r(treenode* temp);
+        void create_nr();// non-recursive starts(iterative)
+        void create_r(); // for creating root node
+        void create_r(treenode* temp);// creating non-root nodes
+        void inorder_r(); // initiating inorder traversal
+        void inorder_r(treenode* temp); // allows traversal of a subtree 
         void preorder_r();
         void preorder_r(treenode* temp);
         void postorder_r();
