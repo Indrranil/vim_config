@@ -20,11 +20,11 @@ class Stack{
         int isEmpty();
         friend class tree;
 };
-
-Stack::Stack(){
+//:: used to access stack from class stack
+Stack::Stack(){  // constructor 
     top = -1;
 }
-
+// below it indicates that PUSH is a member function of class stack
 void Stack::push(treenode* temp){
     if (top < 29){
         top++;
